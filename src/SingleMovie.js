@@ -38,31 +38,71 @@ const SingleMovie = () => {
   return (
     <section className="single-movie">
       <img src={poster} alt={title} />
-      <div className="single-movie-info">
+      <Div className="single-movie-info">
         <h2>{title}</h2>
         <p>
-          <span className="Comics-data">Plot:</span>
+          <Span>PLOT</Span>
           {plot}
         </p>
 
-        <p>{year}</p>
-        <p> {Actors}</p>
-        <p>{Awards} </p>
-        <p>{BoxOffice} </p>
-        <p>{Runtime} </p>
-        <p>{Director} </p>
-        <p> {Genre}</p>
-        <p>{Rated} </p>
-        <p>{Released} </p>
-        <p>{Writer} </p>
-        <p>{Type} </p>
+        <p>
+          <Span>YEAR</Span> {year}
+        </p>
+        <p>
+          <Span>ACTORS</Span> {Actors}
+        </p>
+        <p>
+          {" "}
+          <Span>AWARDS</Span> {Awards}{" "}
+        </p>
+        <p>
+          {" "}
+          <Span>EARNINGS</Span> {BoxOffice}{" "}
+        </p>
+        <p>
+          <Span>RUNTIME</Span> {Runtime}{" "}
+        </p>
+        <p>
+          <Span>DIRECTOR</Span> {Director}{" "}
+        </p>
+        <p>
+          {" "}
+          <Span>GENRE</Span> {Genre}
+        </p>
+        <p>
+          <Span>RATED</Span> {Rated}{" "}
+        </p>
+        <p>
+          <Span>RELEASED</Span> {Released}{" "}
+        </p>
+        <p>
+          <Span>TYPE</Span> {Type}{" "}
+        </p>
+        <p>
+          <Span>WRITERS</Span> {Writer}{" "}
+        </p>
 
         <Link to="/" className="btn">
           back to movies
         </Link>
-      </div>
+      </Div>
     </section>
   );
 };
 
 export default SingleMovie;
+const Div = styled.div`
+  p {
+    padding: 0.3rem;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+`;
+const Span = styled.span`
+  background-color: black;
+  color: aliceblue;
+  padding: 0.5rem;
+  margin: 0rem 1rem 0rem 0rem;
+  border-radius: 5px;
+  font-size: 1rem;
+`;
