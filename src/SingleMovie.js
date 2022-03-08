@@ -33,6 +33,7 @@ const SingleMovie = () => {
     Rated,
     Released,
     Writer,
+    Type,
   } = movie;
   return (
     <section className="single-movie">
@@ -54,6 +55,7 @@ const SingleMovie = () => {
         <p>{Rated} </p>
         <p>{Released} </p>
         <p>{Writer} </p>
+        <p>{Type} </p>
 
         <Link to="/" className="btn">
           back to movies
