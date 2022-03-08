@@ -11,7 +11,7 @@
 
 ## Overview
 
-A webapp that uses omdb api to enable users search info for movies and series
+A webapp that uses omdb api to enable users search infomation for movies and series
 
 ### Screenshot
 
